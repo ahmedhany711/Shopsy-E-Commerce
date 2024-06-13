@@ -130,5 +130,5 @@ export const trendingProducts = createSlice({
 
 });
 
-export const { } = trendingProducts.actions;
+
 export default trendingProducts.reducer;

@@ -54,5 +54,5 @@ export const TestimonialsSlice = createSlice({
 
 });
 
-export const { } = TestimonialsSlice.actions;
+
 export default TestimonialsSlice.reducer;

@@ -118,5 +118,5 @@ export const TopSellingSlice = createSlice({
 
 });
 
-export const { } = TopSellingSlice.actions;
+
 export default TopSellingSlice.reducer;

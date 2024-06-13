@@ -22,7 +22,7 @@ const Jewelry = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  });
 
   //cart
   const [clickedCart, setClickedCart] = useState([]);

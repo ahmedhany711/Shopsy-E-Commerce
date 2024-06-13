@@ -22,7 +22,7 @@ const MensClothing = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  });
 
   //cart
   const [clickedCart, setClickedCart] = useState([]);

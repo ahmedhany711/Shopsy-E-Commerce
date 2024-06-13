@@ -110,5 +110,5 @@ export const TopProductSlice = createSlice({
   reducers: {},
 });
 
-export const {} = TopProductSlice.actions;
+
 export default TopProductSlice.reducer;

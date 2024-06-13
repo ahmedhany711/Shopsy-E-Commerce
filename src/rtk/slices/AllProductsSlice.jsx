@@ -398,5 +398,5 @@ export const AllProductsSlice = createSlice({
     },
 });
 
-export const { } = AllProductsSlice.actions;
+
 export default AllProductsSlice.reducer;
