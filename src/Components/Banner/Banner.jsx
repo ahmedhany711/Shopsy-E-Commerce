@@ -2,7 +2,6 @@ import React from 'react';
 import { GrSecure } from "react-icons/gr";
 import { BiSolidOffer } from "react-icons/bi";
 import { MdPayment } from "react-icons/md";
-import { GiFoodTruck } from "react-icons/gi";
 import { TbTruckDelivery } from "react-icons/tb";
 import bannerimg from '../../photos/Women/appealing-shopaholic-woman-standing-yellow-wall.jpg'
 

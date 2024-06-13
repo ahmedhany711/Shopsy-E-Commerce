@@ -38,7 +38,7 @@ export const CheckSlice = createSlice({
         DeleteFromCheckOut: (state, action) => {
             return state.filter((product) => product.id !== action.payload.id)
         },
-        Clear: (state, action) => {
+        Clear: () => {
             return []
         },
     },

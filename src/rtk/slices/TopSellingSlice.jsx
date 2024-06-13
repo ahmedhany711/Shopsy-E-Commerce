@@ -1,9 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import img1 from '../../photos/Women/imag1jpeg.jpeg'
-import img2 from '../../photos/Women/img2.jpeg'
-import img3 from '../../photos/Women/img33.jpg'
-import img4 from '../../photos/Women/img44.jpg'
-import img5 from '../../photos/Women/img5.jpg'
 import img10 from '../../photos/Women/img10.jpg'
 import img11 from '../../photos/Women/img11.jpg'
 import img12 from '../../photos/Women/img12.jpg'

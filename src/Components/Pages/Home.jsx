@@ -15,9 +15,6 @@ const Home = () => {
 
     // Order Now Window
     const [orderPopup, setOrderPopup] = useState(false);
-    const handleOrderPopup = () => {
-        setOrderPopup(!orderPopup);
-    }
 
     return (
         <div>

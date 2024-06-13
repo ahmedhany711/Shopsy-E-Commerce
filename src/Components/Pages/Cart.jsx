@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { FaCirclePlus } from "react-icons/fa6";
@@ -11,7 +11,7 @@ const Cart = ({ handleOrderPopup }) => {
     const cartProduct = useSelector(state => state.cart);
     const dispatch = useDispatch();
 
-    // Calculate Total Price
+   
     const totalPrice = cartProduct.reduce((acc, data) => {
         acc += data.price * data.quantity;
         return acc;

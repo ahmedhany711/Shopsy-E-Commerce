@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-// import logo from '../../photos/logo.png'
 import logo from "../../photos/download-removebg-preview.png";
 
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
@@ -37,7 +36,7 @@ function NAV({ handleOrderPopup, data }) {
   const cart = useSelector((state) => state.cart);
   const saved = useSelector((state) => state.saved);
 
-  //   get stored Products from local storage
+ 
   const storedProducts = localStorage.getItem("savedProducts");
   const stored = JSON.parse(storedProducts);
   const products = [...saved, stored];

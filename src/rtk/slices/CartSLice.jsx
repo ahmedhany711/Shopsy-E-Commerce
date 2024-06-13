@@ -33,7 +33,7 @@ export const CartSLice = createSlice({
         DeleteFromCart: (state, action) => {
             return state.filter((product) => product.id !== action.payload.id)
         },
-        Clear: (state, action) => {
+        Clear: () => {
             return []
         },
     },

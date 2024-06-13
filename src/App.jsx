@@ -17,15 +17,12 @@ import AllCategories from "./Components/Pages/Categories/AllCategories";
 import MensClothing from "./Components/Pages/Categories/EachCategoryPage/MensClothing";
 import Womans from "./Components/Pages/Categories/EachCategoryPage/Womens";
 import Electronics from "./Components/Pages/Categories/EachCategoryPage/Electronics";
-
 import KidsWear from "./Components/Pages/Categories/EachCategoryPage/KidsWear";
-
 import Jewelry from "./Components/Pages/Categories/EachCategoryPage/Jewelery";
 import ProductDetails from "./Components/Pages/ProductDetails/ProductDetails";
 import SignUpAndLoginPage from "./Components/Login_Signup/Login_Signup";
 import Cartt from "./Components/Pages/CartPage/CartPage";
 import CheckoutPage from "./Components/Pages/Checkout/CheckOut";
-
 import About from "./Components/Pages/About/About";
 import ContactUs from "./Components/Pages/ContactUs/ContactUs";
 
@@ -459,13 +456,11 @@ function App() {
     },
   ];
 
-  // Order Now Window
   const [orderPopup, setOrderPopup] = useState(false);
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
   };
 
-  // Animation
   useEffect(() => {
     Aos.init({
       offset: 100,

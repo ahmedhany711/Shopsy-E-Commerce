@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { MdStarRate } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { IoMdEye } from "react-icons/io";
 import { Details } from "../../../rtk/slices/DetailsSlice";
 import { Link } from "react-router-dom";
-import { FaHeart } from "react-icons/fa6";
+
 import { IoHeartDislike } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
 import { BsFillCartCheckFill } from "react-icons/bs";
 import { BsCart } from "react-icons/bs";
 import { DeleteFromCart, addToCart } from "../../../rtk/slices/CartSLice";
 import {
-  DeleteFromSaved,
-  addToSaved,
+  DeleteFromSaved
 } from "../../../rtk/slices/SavedProductSlice";
 
 export default function SavedProducts() {
@@ -38,7 +36,7 @@ export default function SavedProducts() {
     localStorage.setItem("clickedCarts", JSON.stringify(clickedCart));
   }, [clickedCart]);
 
-  // saved products
+
   const [savedProducts, setSavedProducts] = useState(() => {
     const storedProducts = localStorage.getItem("savedProducts");
     return storedProducts ? JSON.parse(storedProducts) : [];
@@ -47,7 +45,7 @@ export default function SavedProducts() {
     localStorage.setItem("savedProducts", JSON.stringify(savedProducts));
   }, [savedProducts]);
 
-  //Stored Products from local storage
+
   const storedProducts = localStorage.getItem("savedProducts");
   const stored = JSON.parse(storedProducts);
 
@@ -55,14 +53,14 @@ export default function SavedProducts() {
     localStorage.setItem("savedProducts", JSON.stringify(stored));
   }, [stored]);
 
-  //merege 2 array
+
   data = [...data, ...stored];
 
-  // no duplicate
+  
   const uniqueProducts = data.reduce((acc, current) => {
     const isDuplicate = acc.some((product) => product.id === current.id);
 
-    // If it's not a duplicate, add it to the accumulator
+    
     if (!isDuplicate) {
       acc.push(current);
     }

@@ -52,24 +52,24 @@ const Products = ({ showButton, showFooter, showSlider, inHome }) => {
   }, [savedProducts]);
 
   // Update clicked hearts and saved products
-  const updateSavedProducts = () => {
-    const updatedSavedProducts = Object.keys(clickedHearts).reduce(
-      (result, productId) => {
-        if (clickedHearts[productId]) {
-          // If the heart is clicked, add the product to savedProducts
-          const productToAdd = menProducts.find(
-            (product) => product.id === productId
-          );
-          if (productToAdd) {
-            result.push(productToAdd);
-          }
-        }
-        return result;
-      },
-      []
-    );
-    setSavedProducts(updatedSavedProducts);
-  };
+  // const updateSavedProducts = () => {
+  //   const updatedSavedProducts = Object.keys(clickedHearts).reduce(
+  //     (result, productId) => {
+  //       if (clickedHearts[productId]) {
+  //         // If the heart is clicked, add the product to savedProducts
+  //         const productToAdd = menProducts.find(
+  //           (product) => product.id === productId
+  //         );
+  //         if (productToAdd) {
+  //           result.push(productToAdd);
+  //         }
+  //       }
+  //       return result;
+  //     },
+  //     []
+  //   );
+  //   setSavedProducts(updatedSavedProducts);
+  // };
 
   var settings = {
     dots: false,
