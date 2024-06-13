@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { BsFillCartCheckFill } from "react-icons/bs";
 import { BsCart } from "react-icons/bs";
 import { DeleteFromCart, addToCart } from "../../../rtk/slices/CartSLice";
-import { Link } from "react-router-dom";
+import Footer from "../../Footer/Footer";
 
 const ProductDetails = () => {
   const products = useSelector((state) => state.DetailsSlice);
@@ -108,6 +108,7 @@ const ProductDetails = () => {
                     </div> */}
         </div>
       </div>
+    <Footer/>
     </>
   );
 };

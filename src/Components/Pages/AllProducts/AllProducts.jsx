@@ -11,7 +11,6 @@ import {
   DeleteFromSaved,
   addToSaved,
 } from "../../../rtk/slices/SavedProductSlice";
-import { IoHeartDislike } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa6";
 
 const AllProducts = () => {

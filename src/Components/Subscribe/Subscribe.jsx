@@ -1,5 +1,5 @@
 import React from 'react';
-import orangeBanner from '../../photos/Orange.jpg'
+
 
 const Subscribe = () => {
     return (

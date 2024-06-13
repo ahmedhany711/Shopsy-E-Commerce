@@ -2,7 +2,6 @@ import React from "react";
 import "../../App.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-
 import man from "../../photos/Hero Section/man.png";
 import woman from "../../photos/Hero Section/woman.png";
 import sale from "../../photos/offer-187b.png";

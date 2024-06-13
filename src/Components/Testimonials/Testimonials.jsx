@@ -1,12 +1,12 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import {  useSelector } from 'react-redux';
 import Slider from 'react-slick';
 import '../../../src/App.css'
 
 const Testimonials = () => {
 
     const testimonials = useSelector((state) => state.testimonials)
-    const dispatch = useDispatch();
+
 
     var settings = {
         dots: true,

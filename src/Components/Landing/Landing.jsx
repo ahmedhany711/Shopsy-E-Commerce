@@ -13,22 +13,7 @@ import { Link } from 'react-router-dom';
 const Landing = () => {
     return (
         <div className='min-h-[450px]  bg-gray-50 py-10 dark:pb-20 dark:pt-0 dark:bg-gray-900 '>
-            {/* Banner
-            <div id='landingBanner'
-                data-aos="zoom-in"
-                className='  bg-cover   bg-no-repeat backdrop-blur-3xl shadow-md z-10 relative mb-10'
-            >
-                <div className='hidden sm:block'>
-                    <div className='absolute sm:right-[5%] lg:right-[15%] top-1/4  flex flex-col items-center justify-center text-white '>
-                        <h2 className='text-3xl font-bold text-center mb-4'>🔥 Black Friday Sale 🔥</h2>
-                        <p className='text-lg text-center mb-6'>Unbeatable Deals Await! Order Now & Save Big!</p>
-                        <button className='bg-gradient-to-r from-primary to-secondary text-white text-lg px-6 py-3 rounded-full shadow-md hover:scale-105 transition-transform duration-300'>
-                            Order Now
-                        </button>
-                    </div>
-                </div>
-            </div> */}
-
+            
 
             {/* Cards */}
             <div className='container  pr-0 md:pr-28 lg:pr-5'>

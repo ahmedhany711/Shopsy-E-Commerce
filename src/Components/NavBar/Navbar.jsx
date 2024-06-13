@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 // import logo from '../../photos/logo.png'
 import logo from "../../photos/download-removebg-preview.png";
-import { IoSearchSharp } from "react-icons/io5";
+
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./Darkmode";
-import { DropdownMenu, NavDropdown } from "react-bootstrap";
+import {  NavDropdown } from "react-bootstrap";
 import { MdAccountCircle } from "react-icons/md";
 import SearchBar from "../SearchBar/SearchBar";
 import { useSelector } from "react-redux";
@@ -37,7 +37,7 @@ function NAV({ handleOrderPopup, data }) {
   const cart = useSelector((state) => state.cart);
   const saved = useSelector((state) => state.saved);
 
-  //Stored Products from local storage
+  //   get stored Products from local storage
   const storedProducts = localStorage.getItem("savedProducts");
   const stored = JSON.parse(storedProducts);
   const products = [...saved, stored];
@@ -45,7 +45,7 @@ function NAV({ handleOrderPopup, data }) {
   const uniqueProducts = products.reduce((acc, current) => {
     const isDuplicate = acc.some((product) => product.id === current.id);
 
-    // If it's not a duplicate, add it to the accumulator
+    
     if (!isDuplicate) {
       acc.push(current);
     }

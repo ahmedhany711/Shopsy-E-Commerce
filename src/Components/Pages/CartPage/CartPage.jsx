@@ -1,10 +1,8 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { FaCirclePlus } from "react-icons/fa6";
 import { FaCircleMinus } from "react-icons/fa6";
 import {
-  Clear,
   Decrement,
   DeleteFromCart,
   increment,
@@ -20,11 +18,12 @@ const Cartt = ({ handleOrderPopup }) => {
   const cartProduct = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
-  // Calculate Total Price
+  
   const totalPrice = cartProduct.reduce((acc, data) => {
     acc += data.price * data.quantity;
     return acc;
   }, 0);
+  
   return (
     <div className="mb-28 mt-36 dark:mt-32  dark:mb-0 dark:pt-4 dark:pb-20 dark:bg-gray-900 dark:text-white ">
       <div className="container mx-auto">

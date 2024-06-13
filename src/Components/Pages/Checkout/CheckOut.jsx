@@ -37,19 +37,14 @@ const CheckoutPage = ({ orderNumber }) => {
     };
     const handleSubmit = e => {
         e.preventDefault();
-        // Dispatch action to submit order data
+   
         dispatch(submitOrder(formData, cart));
 
-        // Process order and generate order number
-        const orderNumber = generateOrderNumber();
+        
+      
 
     };
 
-
-    const generateOrderNumber = () => {
-        // Generate a random order number (you can use any method here)
-        return Math.floor(Math.random() * 1000000);
-    };
 
 
     const handleCountryChange = e => {

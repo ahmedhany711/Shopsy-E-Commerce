@@ -1,8 +1,7 @@
 import React from 'react';
-// import LOGO from '../../photos/logo.png'
 import LOGO from '../../photos/download-removebg-preview.png'
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaLinkedinIn, FaLocationArrow, FaMobileAlt } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMobileAlt } from 'react-icons/fa';
 
 const links = [
     {

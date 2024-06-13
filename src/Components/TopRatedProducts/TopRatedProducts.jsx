@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../rtk/slices/ProductSlice";
-import img1 from "../../photos/Mens/green.png";
 import { FaStar } from "react-icons/fa";
-import Slider from "react-slick";
 import { BsFillCartCheckFill } from "react-icons/bs";
 import { BsCart } from "react-icons/bs";
 
@@ -19,7 +17,6 @@ import {
 } from "../../rtk/slices/SavedProductSlice";
 
 const TopRatedProducts = ({ showButton, showFooter, inHome }) => {
-  const products = useSelector((state) => state.products);
   const topProducts = useSelector((state) => state.topProducts);
   const dispatch = useDispatch();
 
@@ -58,24 +55,24 @@ const TopRatedProducts = ({ showButton, showFooter, inHome }) => {
   }, [topRatedSavedProducts]);
 
   // Update clicked hearts and saved products
-  const updateSavedProducts = () => {
-    const updatedSavedProducts = Object.keys(clickedHearts).reduce(
-      (result, productId) => {
-        if (clickedHearts[productId]) {
-          // If the heart is clicked, add the product to savedProducts
-          const productToAdd = topProducts.find(
-            (product) => product.id === productId
-          );
-          if (productToAdd) {
-            result.push(productToAdd);
-          }
-        }
-        return result;
-      },
-      []
-    );
-    setTopRatedSavedProducts(updatedSavedProducts);
-  };
+  // const updateSavedProducts = () => {
+  //   const updatedSavedProducts = Object.keys(clickedHearts).reduce(
+  //     (result, productId) => {
+  //       if (clickedHearts[productId]) {
+         
+  //         const productToAdd = topProducts.find(
+  //           (product) => product.id === productId
+  //         );
+  //         if (productToAdd) {
+  //           result.push(productToAdd);
+  //         }
+  //       }
+  //       return result;
+  //     },
+  //     []
+  //   );
+  //   setTopRatedSavedProducts(updatedSavedProducts);
+  // };
   return (
     <>
       <div

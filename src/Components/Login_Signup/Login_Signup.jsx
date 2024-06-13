@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { MdOutlineMail } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
-import { FaRegUser } from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -16,7 +15,7 @@ const SignUpAndLoginPage = () => {
 
     const handleSignUp = (e) => {
         e.preventDefault();
-        // Perform sign-up logic here
+    
         console.log('Sign-up details:', email, password, fullName, phoneNumber);
         setIsLoggedIn(false);
         setIsSignUp(false);
@@ -24,14 +23,12 @@ const SignUpAndLoginPage = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        // Perform login logic here
         console.log('Login details:', email, password);
         setIsLoggedIn(true);
     };
 
     if (isLoggedIn) {
-        // Redirect to home page or any other authenticated page
-        window.location.href = '/'; // Change '/home' to your desired URL
+        window.location.href = '/'; 
     }
 
     return (

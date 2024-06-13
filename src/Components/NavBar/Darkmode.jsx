@@ -31,7 +31,7 @@ const DarkMode = () => {
                 <MdDarkMode onClick={() => {
                     setTheme(theme === 'dark' ? "light" : "dark")
                 }}
-                    className={`absolute text-gray-800 top-1/2 -translate-y-1/2  text-2xl cursor-pointer text-white ${theme === 'dark' ? 'opacity-0' : 'opacity-100'}`}
+                    className={`absolute  top-1/2 -translate-y-1/2  text-2xl cursor-pointer text-white ${theme === 'dark' ? 'opacity-0' : 'opacity-100'}`}
                 />
             </div>
         </>

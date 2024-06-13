@@ -1,16 +1,14 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
+import logo from '../../photos/ui ux home/FinalLog-removebg-preview.png'
 // import logo from '../../photos/ui ux home/logo.png'
 // import logo from '../../photos/ui ux home/logooo.png'
-import logo from '../../photos/ui ux home/FinalLog-removebg-preview.png'
-
-
-import { IoSearchSharp } from "react-icons/io5";
-import { FaShoppingCart } from "react-icons/fa";
-import DarkMode from "./Darkmode";
-import { DropdownMenu, NavDropdown } from "react-bootstrap";
-import { MdAccountCircle } from "react-icons/md";
+// import { IoSearchSharp } from "react-icons/io5";
+// import { FaShoppingCart } from "react-icons/fa";
+// import DarkMode from "./Darkmode";
+// import { DropdownMenu, NavDropdown } from "react-bootstrap";
+// import { MdAccountCircle } from "react-icons/md";
 
 
 const menu = [{ id: 1, name: "Home", link: "/", },

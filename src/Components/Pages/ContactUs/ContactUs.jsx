@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdOutlineMail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
-import { FaFacebook, FaInstagram, FaLinkedin, FaLinkedinIn, FaLocationArrow, FaMobileAlt } from 'react-icons/fa';
+import { FaLocationArrow } from "react-icons/fa";
 
 const ContactUs = () => {
     return (
