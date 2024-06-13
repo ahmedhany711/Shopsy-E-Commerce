@@ -59,7 +59,7 @@ const TopRatedProducts = ({ showButton, showFooter, inHome }) => {
   //   const updatedSavedProducts = Object.keys(clickedHearts).reduce(
   //     (result, productId) => {
   //       if (clickedHearts[productId]) {
-         
+
   //         const productToAdd = topProducts.find(
   //           (product) => product.id === productId
   //         );
@@ -130,12 +130,11 @@ const TopRatedProducts = ({ showButton, showFooter, inHome }) => {
                           dispatch(addToSaved(data));
                           setTopRatedSavedProducts((prev) => [...prev, data]);
                         } else {
-                          // Remove from saved products in local storage
                           const updatedSavedProductss =
                             topRatedSavedProducts.filter(
                               (product) => product.id !== data.id
                             );
-                          // Remove from state
+
                           setTopRatedSavedProducts(updatedSavedProductss);
                           localStorage.setItem(
                             "savedProducts",
@@ -189,6 +188,12 @@ const TopRatedProducts = ({ showButton, showFooter, inHome }) => {
                               />
                             );
                           }
+                          return (
+                            <FaStar
+                              key={index}
+                              className="text-2xl text-yellow-400"
+                            />
+                          );
                         })}
                       </div>
                       {/* title */}
