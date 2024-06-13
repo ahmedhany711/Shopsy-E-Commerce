@@ -1,0 +1,150 @@
+#body {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #fea928;
+    color: white;
+
+}
+
+#aboutBanner {
+    background-image: url("/src/photos/About/about.jpg");
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+
+#gpBanner {
+    background-image: url("/src/photos/ui ux home/Home-banner.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#gpBanner ::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #180e0e;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+}
+
+#landingBanner {
+    background-image: url("/src/photos/banners/banner.jpg");
+    width: 100%;
+    height: 350px;
+}
+
+#Details h3 {
+    text-align: center;
+}
+
+#Details p {
+    text-align: center;
+}
+
+
+#hero-text {
+    text-align: center;
+    order: 2;
+}
+
+#hero-img {
+    order: 1;
+    margin-bottom: 15px;
+}
+
+#photoDetails {
+    text-align: center;
+}
+
+#bannerIcons {
+    margin-right: auto;
+    margin-left: auto;
+    gap: 35px;
+}
+
+#bannerDetails {
+    text-align: center;
+}
+
+#Subscribe {
+    background-image: url("/src/photos/Orange.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+#Footer {
+    background-image: url("/src/photos/desktop-wallpaper-footer.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+/* #links {
+    text-align: left;
+} */
+
+@media (min-width: 640px) {
+    #landingBanner {
+        background-image: url("/src/photos/banners/banner.jpg");
+        width: 100%;
+        height: 350px;
+        background-position: center;
+
+    }
+
+    #hero-text {
+        text-align: left;
+        order: 1;
+    }
+
+    #hero-img {
+        order: 2;
+        margin-bottom: 0px;
+    }
+
+    #photoDetails {
+        text-align: left;
+    }
+
+    #bannerIcons {
+        margin-right: 0;
+        margin-left: 0;
+        gap: 18px;
+    }
+
+    #bannerDetails {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    #Details h3 {
+        text-align: left;
+    }
+
+    #Details p {
+        text-align: left;
+    }
+
+    #landingBanner {
+        background-image: url("/src/photos/banners/banner.jpg");
+        width: 100%;
+        height: 350px;
+
+
+    }
+}
+
+@media (min-width: 990px) {
+    #bannerIcons {
+        margin-right: 0;
+        margin-left: 0;
+        gap: 32px;
+    }
+}
