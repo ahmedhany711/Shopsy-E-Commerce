@@ -103,7 +103,7 @@ const TopRatedProducts = ({ showButton, showFooter, inHome }) => {
           </div>
           {/* Body section */}
           <div className="flex flex-col">
-            <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-row-1  overflow-hidden gap-20 sm:gap-8 place-items-center items-center z-100 pt-[60px] mt-10 ">
+            <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:grid-row-1  overflow-hidden gap-20 sm:gap-8 place-items-center items-center z-100 pt-[60px] mt-10 ">
               {topProducts.map((data) => {
                 return (
                   <div

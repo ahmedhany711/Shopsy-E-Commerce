@@ -5,7 +5,7 @@ import logo from "../../photos/download-removebg-preview.png";
 
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./Darkmode";
-import {  NavDropdown } from "react-bootstrap";
+import { NavDropdown } from "react-bootstrap";
 import { MdAccountCircle } from "react-icons/md";
 import SearchBar from "../SearchBar/SearchBar";
 import { useSelector } from "react-redux";
@@ -32,19 +32,21 @@ const secondDropDownMenu = [
   { id: 4, name: "Jewelery", link: "/jewelery" },
   { id: 5, name: "Kids Wear", link: "/Kids Wear" },
 ];
-function NAV({ handleOrderPopup, data }) {
+function NAV({ handleOrderPopup, data })
+{
   const cart = useSelector((state) => state.cart);
   const saved = useSelector((state) => state.saved);
 
- 
+
   const storedProducts = localStorage.getItem("savedProducts");
   const stored = JSON.parse(storedProducts);
   const products = [...saved, stored];
 
-  const uniqueProducts = products.reduce((acc, current) => {
+  const uniqueProducts = products.reduce((acc, current) =>
+  {
     const isDuplicate = acc.some((product) => product.id === current.id);
 
-    
+
     if (!isDuplicate) {
       acc.push(current);
     }
@@ -72,7 +74,7 @@ function NAV({ handleOrderPopup, data }) {
               {/* Search bar + Order button  + Dark Mode switcher */}
               {/* Search bar */}
               <div className="flex  justify-between items-center gap-5 text-gray-800 ">
-                <div className="group relative hidden  sm:block z-[100]">
+                <div className="group relative hidden  lg:block z-[100]">
                   <SearchBar data={data} />
                   {/* <input type="text" placeholder="search" className="w-[200px] sm:[200px] rounded-full px-3 py-1 group-hover:w-[300px] transition-all duration-500 border border-gray-300 focus:outline-none focus:border-2 focus:border-primary "></input>
                                     <IoSearchSharp className="absolute top-1/2 -translate-y-1/2 right-3  text-gray-400 group-hover:text-primary" /> */}
@@ -101,7 +103,7 @@ function NAV({ handleOrderPopup, data }) {
                   <FaHeart className="text-2xl fill-white " />{" "}
                   <div className="absolute -mt-9 -right-2">
                     {" "}
-                    {uniqueProducts.length-1}
+                    {uniqueProducts.length - 1}
                   </div>
                 </Link>
                 {/* <button
@@ -139,7 +141,8 @@ function NAV({ handleOrderPopup, data }) {
           >
             <div className="container">
               <ul className=" list-none flex flex-row sm:flex gap-[5px] md:gap-[18px] mx-auto items-center justify-center text-gray-800 dark:text-white">
-                {menu.map((data) => {
+                {menu.map((data) =>
+                {
                   return (
                     <li
                       key={data.id}
@@ -153,7 +156,7 @@ function NAV({ handleOrderPopup, data }) {
                         to={data.link}
                         className={`
                                             no-underline text-gray-800   font-semibold px-3 lg:px-0 lg:text-sm text-xl
-                                        duration-300 hover:text-primary
+                                        duration-300 hover:text-primary dark:hover:text-gray-900
                                         inline-block dark:text-white`}
                       >
                         {data.name}
@@ -163,25 +166,26 @@ function NAV({ handleOrderPopup, data }) {
                 })}
 
                 {/* Drop Down Menu */}
-                <li className="mx-2 duration-300 hover:text-primary  font-semibold">
+                <li className="mx-2 duration-300 hover:text-gray-800  font-semibold">
                   <NavDropdown
                     title="Trending Items"
                     id="basic-nav-dropdown"
-                    className={`duration-300  hover:text-primary dark:text-white text-gray-800 `}
+                    className={`duration-300  hover:text-white dark:text-white text-white `}
                   >
                     <NavDropdown.Header
-                      className="duration-300  -my-2 rounded-md  shadow-md  dark:bg-gray-900 dark:text-white "
+                      className="duration-300  -my-2 rounded-md  shadow-md  dark:bg-secondary dark:text-white "
                       style={{ inset: "20px auto auto 0px !important" }}
                     >
-                      {dropDownMenu.map((data, index) => {
+                      {dropDownMenu.map((data, index) =>
+                      {
                         return index <= 1 ? (
                           <>
                             <Link
                               to={data.link}
-                              className="duration-300  text-gray-800 no-underline hover:text-primary 
+                              className="duration-300  text-gray-800 no-underline hover:text-secondary 
                                                         hover:bg-inherit  dark:text-white
-                                                        dark:bg-gray-900
-                                                        dark:hover:text-primary"
+                                                        dark:bg-secondary
+                                                        dark:hover:text-gray-900"
                             >
                               {data.name}
                             </Link>
@@ -196,10 +200,10 @@ function NAV({ handleOrderPopup, data }) {
                             <Link
                               to={data.link}
                               className="
-                                                                text-gray-800  no-underline duration-300  hover:text-primary
+                                                                text-gray-800  no-underline duration-300  hover:text-primary dark:hover:text-gray-900 
                                                         hover:bg-inherit 
                                                             dark:text-white
-                                                    dark:hover:text-primary"
+                                                    "
                             >
                               {data.name}
                             </Link>
@@ -222,7 +226,8 @@ function NAV({ handleOrderPopup, data }) {
                       className="duration-300  -my-2 rounded-md  shadow-md  dark:bg-secondary dark:text-white "
                       style={{ inset: "20px auto auto 0px !important" }}
                     >
-                      {secondDropDownMenu.map((data, index) => {
+                      {secondDropDownMenu.map((data, index) =>
+                      {
                         return index <= 3 ? (
                           <>
                             <Link
@@ -230,7 +235,7 @@ function NAV({ handleOrderPopup, data }) {
                               className="duration-300  text-gray-800  no-underline hover:text-primary 
                                                         hover:bg-inherit  dark:text-white
                                                         dark:bg-secondary
-                                                        dark:hover:text-primary"
+                                                        dark:hover:text-gray-900"
                             >
                               {data.name}
                             </Link>
@@ -248,7 +253,7 @@ function NAV({ handleOrderPopup, data }) {
                                                                 text-gray-800  no-underline duration-300  hover:text-primary
                                                         hover:bg-inherit 
                                                             dark:text-white
-                                                    dark:hover:text-primary"
+                                                    dark:hover:text-gray-900"
                             >
                               {data.name}
                             </Link>

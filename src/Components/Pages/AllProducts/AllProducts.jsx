@@ -114,25 +114,25 @@ const AllProducts = () => {
         {/* Body Section */}
         <div className="col-12 flex">
           {/* Sidebar */}
-          <div className="col-2 h-[100vbr] inset-0">
-            <div className="bg-white p-4 rounded-lg shadow-lg">
+          <div className="col-2  h-[100vbr] inset-0">
+            <div className="bg-white px-0  py-4 rounded-lg shadow-lg">
               {/* Categories */}
               <h3 className="text-lg font-semibold mb-2 text-primary/100">
                 Categories
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2  ">
                 {categories.map((category) => (
                   <li key={category}>
                     <label className="flex items-center space-x-2">
                       <input
                         type="checkbox"
-                        className="form-checkbox"
+                        className="form-checkbox text-sm"
                         value={category}
                         onChange={() =>
                           handleFilterSelect("category", category)
                         }
                       />
-                      <span>{category}</span>
+                      <span className=" text-sm">{category}</span>
                     </label>
                   </li>
                 ))}
@@ -202,7 +202,7 @@ const AllProducts = () => {
 
           {/* Clothes ********** */}
           <div className="col-10 mt-5">
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4  gap-12 md:gap-1 md:gap-y-10 place-items-center items-start ">
+            <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3  md:gap-y-10 place-items-center items-start ">
               {filteredProducts.map((product) => (
                 <div
                   key={product.id}

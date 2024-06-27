@@ -42,7 +42,7 @@ const TopSelling = ({ showButton, showFooter, inHome }) => {
 
                     {/* Body Section */}
                     <div>
-                        <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 place-items-center items-start ' >
+                        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 place-items-center items-start ' >
                             {products.map((data) => <>
                                 <div data-aos='fade-up'
                                     data-aos-delay={data.aosDelay}

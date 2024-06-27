@@ -479,7 +479,6 @@ function App() {
       <NAV handleOrderPopup={handleOrderPopup} data={data} />
       <Routes>
         <Route path="/" element={<Home />} />{" "}
-        <Route path="checkout" element={<CheckoutPage />} />{" "}
         <Route
           path="/top-rated"
           element={
@@ -501,6 +500,9 @@ function App() {
             />
           }
         />
+
+
+        <Route path="checkout" element={<CheckoutPage />} />{" "}
         <Route
           path="/best-selling"
           element={

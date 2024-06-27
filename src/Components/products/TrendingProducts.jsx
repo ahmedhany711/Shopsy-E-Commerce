@@ -76,7 +76,7 @@ const Products = ({ showButton, showFooter, showSlider, inHome }) => {
     arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -85,19 +85,25 @@ const Products = ({ showButton, showFooter, showSlider, inHome }) => {
     pauseOnFocus: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1500,
         settings: {
           slidesToShow: 4,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           slidesToShow: 2,
         },
@@ -253,7 +259,7 @@ const Products = ({ showButton, showFooter, showSlider, inHome }) => {
               </Slider>
             ) : (
               <>
-                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 place-items-center items-start ">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 place-items-center items-start ">
                   {menProducts.map((data) => (
                     <>
                       <div

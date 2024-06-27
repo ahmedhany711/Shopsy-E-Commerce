@@ -10,6 +10,7 @@ const Testimonials = () => {
 
     var settings = {
         dots: true,
+        
         arrows: false,
         infinite: true,
         speed: 500,
@@ -47,7 +48,7 @@ const Testimonials = () => {
     };
 
     return (
-        <div className='py-10  dark:bg-gray-800'>
+        <div className='py-10  dark:bg-gray-900'>
             <div className='container' >
                 {/* Header Section */}
                 <div className=' max-w-[600px] mx-auto mb-12 text-center font-heading'>
@@ -68,7 +69,7 @@ const Testimonials = () => {
                                 <div data-aos="zoom-in"
                                     className='py-12'>
                                     <div
-                                        className='flex flex-col gap-1 bg-gray-600 rounded-2xl shadow-2xl mx-3 px-4  pt-1 pb-2  text-white mt-2  dark:bg-secondary relative'
+                                        className='flex flex-col gap-1 bg-gray-600 rounded-2xl shadow-2xl mx-3 px-4  pt-1 pb-2  text-white mt-2  dark:bg-[#1d2027] relative'
                                         key={data.id}
                                     >
                                         {/* image */}

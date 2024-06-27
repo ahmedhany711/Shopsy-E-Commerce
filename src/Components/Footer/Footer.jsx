@@ -23,16 +23,16 @@ const links = [
 ]
 const Footer = () => {
     return (
-        <div className='h-[450px] bg-gray-900 dark:bg-gradient-to-r from-primary to-secondary ' id='footerBanner'>
+        <div className=' bg-gray-900 pb-10 dark:bg-[#1d2027] ' id='footerBanner'>
             <div
                 data-aos="zoom-in"
                 className=''
             >
                 <div className='container '>
-                    <div className='grid md:grid-cols-3  gap-12 items-start text-white pt-12'>
+                    <div className='grid grid-cols-2 md:grid-cols-3   gap-12 items-start text-white pt-12'>
                         {/* Company  col-1*/}
                         <div className='mt-10 '>
-                            <div className='flex gap-4 -mt-1 items-start'>
+                            <div className='flex gap-1 -mt-1 items-end'>
                                 <img src={LOGO} alt="" className='w-16 h-16' />
                                 <h1 className='font-heading'> Shopsy </h1>
                             </div>
@@ -40,12 +40,12 @@ const Footer = () => {
                                 fashion to home decor and more, we offer high-quality products at competitive prices.</p>
                         </div>
 
-                        {/* Links Section col-2 */}
-                        <div className=' mt-10 mx-auto'>
+                        {/* Links Section col-2 + col-3*/}
+                        <div className=' mt-10 mx-0 sm:mx-auto'>
                             <div className=''>
                                 {/* Page Links col-1 inside */}
                                 <div className='flex flex-col gap-2 px-4   justify-center items-left'>
-                                    <h1 className='text-4xl text-center font-heading'>
+                                    <h1 className='text-4xl  font-heading'>
                                         Links
                                     </h1>
                                     <div
@@ -68,7 +68,6 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-
                         {/* Social Links col-3 */}
                         <div className=' mt-10 mx-auto px-2'>
                             <div className='flex flex-col gap-8 items-start '>
@@ -95,6 +94,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
